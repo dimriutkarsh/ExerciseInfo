@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YogaFit - Login/Signup</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-content">
+        <header class="header">
+            <h1>Welcome to YogaFit</h1>
+            <div class="header-content">
+                <p class="header-title">Transform your body, mind, and soul through the power of yoga and fitness.</p>
+                <p class="header-subtitle">Join our community of wellness enthusiasts and discover the perfect balance of physical and mental well-being.</p>
+            </div>
+        </header>
+
+        <div class="form-container">
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <input type="email" required id="loginEmail">
+                        <label for="loginEmail">Email</label>
+                        <span class="icon">📧</span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" required id="loginPassword">
+                        <label for="loginPassword">Password</label>
+                        <span class="icon">🔒</span>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label class="remember">
+                            <input type="checkbox" id="rememberMe">
+                            <span>Remember Me</span>
+                        </label>
+                        <a href="#" class="forgot-link">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Login</button>
+
+                    <p class="switch-form">
+                        Don't have an account? 
+                        <a href="#" class="switch-btn" data-form="signup">Sign Up</a>
+                    </p>
+                </form>
+            </div>
+
+            <div class="form-box signup hidden">
+                <h2>Create Account</h2>
+                <form id="signupForm">
+                    <div class="input-group">
+                        <input type="text" required id="signupName">
+                        <label for="signupName">Full Name</label>
+                        <span class="icon">👤</span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" required id="signupEmail">
+                        <label for="signupEmail">Email</label>
+                        <span class="icon">📧</span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" required id="signupPassword">
+                        <label for="signupPassword">Password</label>
+                        <span class="icon">🔒</span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" required id="confirmPassword">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <span class="icon">🔒</span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Sign Up</button>
+
+                    <p class="switch-form">
+                        Already have an account? 
+                        <a href="#" class="switch-btn" data-form="login">Login</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="main2.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/formHandling.js"></script>
+    <!-- <script src="js/auth.js"></script>
+    <script src="js/formHandling.js"></script>
+    <script src="js/main5.js"></script> -->
+</body>
+</html>

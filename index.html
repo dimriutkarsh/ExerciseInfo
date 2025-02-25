@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Gym Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <header class="header">
+        <a href="#" class="logo">Yoga</a>
+        <nav class="nav">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="exercises.html">EXERCISES</a>
+            <a href="#reviews">REVIEWS</a>
+            <a href="#help">HELP</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section id="home" class="section home">
+            <div class="content">
+                <h2>Your Personal Fitness Tracker</h2>
+                <p>Transform your life through the power of yoga. Track your progress, join our community, and embark on a journey to wellness with personalized yoga sessions and expert guidance.</p>
+                <a href="login.html"><button class="cta-button">Get Started</button></a>
+
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="content">
+                <h2>About Our Journey</h2>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <span class="icon">🧘‍♀️</span>
+                        <h3>Expert Guidance</h3>
+                        <p>Learn from certified yoga instructors with years of experience in traditional and modern practices.</p>
+                    </div>
+                    <div class="about-card">
+                        <span class="icon">📱</span>
+                        <h3>Track Progress</h3>
+                        <p>Monitor your journey with our advanced tracking system, setting and achieving personal milestones.</p>
+                    </div>
+                    <div class="about-card">
+                        <span class="icon">👥</span>
+                        <h3>Community</h3>
+                        <p>Join a supportive community of yoga enthusiasts, sharing experiences and motivation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="section reviews">
+            <div class="content">
+                <h2>What Our Members Say</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://i.pravatar.cc/150?img=1" alt="Sarah" class="avatar">
+                            <div class="review-info">
+                                <h4>Sarah Johnson</h4>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>"This platform transformed my yoga practice. The tracking features help me stay motivated and consistent."</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://i.pravatar.cc/150?img=2" alt="Michael" class="avatar">
+                            <div class="review-info">
+                                <h4>Michael Chen</h4>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>"The expert guidance and community support make this platform stand out. Highly recommended!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="help" class="section help">
+            <div class="content">
+                <h2>Need Help?</h2>
+                <div class="help-grid">
+                    <div class="help-card">
+                        <h3>FAQs</h3>
+                        <ul>
+                            <li>How do I get started?</li>
+                            <li>What equipment do I need?</li>
+                            <li>Can I access content offline?</li>
+                            <li>How do I track my progress?</li>
+                        </ul>
+                        <button class="help-btn">View All FAQs</button>
+                    </div>
+                    <div class="help-card">
+                        <h3>Contact Support</h3>
+                        <form class="contact-form">
+                            <input type="email" placeholder="Your Email" required>
+                            <textarea placeholder="Your Question" required></textarea>
+                            <button type="submit" class="help-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="loginModal" class="modal">
+        <div class="login-container">
+            <span class="close-modal">&times;</span>
+            <h2>Member Login</h2>
+            <form id="loginForm">
+                <div class="input-box">
+                    <input type="email" id="loginEmail" required>
+                    <label>Enter Your Email</label>
+                    <span class="icon">📧</span>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="loginPassword" required>
+                    <label>Enter Your Password</label>
+                    <span class="icon">🔒</span>
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox" id="remember"> Remember Me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="register-link">
+                    <p>Not A Member? <a href="#" id="switchToSignup">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="signup-container" style="display: none;">
+            <span class="close-modal">&times;</span>
+            <h2>Create Account</h2>
+            <form id="signupForm">
+                <div class="input-box">
+                    <input type="text" id="signupName" required>
+                    <label>Full Name</label>
+                    <span class="icon">👤</span>
+                </div>
+                <div class="input-box">
+                    <input type="email" id="signupEmail" required>
+                    <label>Email Address</label>
+                    <span class="icon">📧</span>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="signupPassword" required>
+                    <label>Create Password</label>
+                    <span class="icon">🔒</span>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="confirmPassword" required>
+                    <label>Confirm Password</label>
+                    <span class="icon">🔒</span>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <div class="register-link">
+                    <p>Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

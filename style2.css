@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                      url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.page-content {
+    min-height: 100vh;
+    padding: 2.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.header {
+    text-align: center;
+    max-width: 48rem;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    transition: 0.3s ease;
+}
+
+.header-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.header-subtitle {
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.form-box.hidden {
+    display: none;
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.form-box h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    height: 3rem;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    padding: 0 1.25rem;
+    padding-right: 3rem;
+    color: white;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 1.25rem;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group input:valid {
+    border-color: white;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -0.5rem;
+    left: 1rem;
+    font-size: 0.875rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0 0.5rem;
+    border-radius: 0.75rem;
+}
+
+.input-group .icon {
+    position: absolute;
+    right: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.forgot-link {
+    color: white;
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 3rem;
+    background: white;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #1a1a1a;
+    color: white;
+}
+
+.switch-form {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.switch-btn {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 0.25rem;
+}
+
+.switch-btn:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .header h1 {
+        font-size: 3rem;
+    }
+    
+    .header-content {
+        padding: 2rem;
+    }
+    
+    .header-title {
+        font-size: 1.5rem;
+    }
+    
+    .form-box {
+        padding: 2.5rem;
+    }
+}
